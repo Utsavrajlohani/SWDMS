@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Bootstrap Compatibility Layer */
+    .btn { 
+        @apply inline-flex items-center px-4 py-2 border border-transparent rounded-lg font-semibold text-xs uppercase tracking-widest transition ease-in-out duration-150 shadow-sm; 
+    }
+    .btn-primary { 
+        @apply bg-indigo-600 text-white hover:bg-indigo-700 focus:bg-indigo-700 active:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2; 
+    }
+    .btn-secondary { 
+        @apply bg-gray-500 text-white hover:bg-gray-600 focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2; 
+    }
+    .btn-success { 
+        @apply bg-emerald-600 text-white hover:bg-emerald-700 focus:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2; 
+    }
+    .btn-danger { 
+        @apply bg-red-600 text-white hover:bg-red-700 focus:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2; 
+    }
+    .btn-info {
+        @apply bg-sky-500 text-white hover:bg-sky-600 focus:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2;
+    }
+
+    .form-control { 
+        @apply block w-full rounded-lg border-gray-300 dark:border-gray-600 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white sm:text-sm; 
+    }
+    .form-select { 
+        @apply block w-full rounded-lg border-gray-300 dark:border-gray-600 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white sm:text-sm; 
+    }
+
+    .alert { @apply p-4 mb-4 rounded-lg border; }
+    .alert-success { @apply bg-green-50 border-green-200 text-green-800; }
+    .alert-danger { @apply bg-red-50 border-red-200 text-red-800; }
+    .alert-warning { @apply bg-yellow-50 border-yellow-200 text-yellow-800; }
+    .alert-info { @apply bg-blue-50 border-blue-200 text-blue-800; }
+
+    /* Legacy Grid Support (Minimal) */
+    .row { @apply flex flex-wrap -mx-4; }
+    /* .col-md-*, .col-lg-* support is harder in pure CSS but most forms use full width or simple columns. 
+       We rely on Tailwind classes for new layouts. Legacy forms might need specific classes or handle via w-full */
+    
+    .form-group { @apply mb-4; }
+}
