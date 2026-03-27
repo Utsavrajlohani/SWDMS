@@ -24,7 +24,8 @@
                     The ultimate inventory &amp; billing system for modern wholesalers. Automate your operations with GST-compliant invoicing, real-time analytics, and seamless stock tracking.
                 </p>
                 <div class="flex flex-wrap gap-4 fade-in-up" style="animation-delay: 0.6s;">
-                    <a href="{{ route('login') }}" class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors text-sm font-medium shadow-sm">Get Started</a>
+                    <a href="{{ route('register') }}" class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors text-sm font-medium shadow-sm">Get Started</a>
+
 
                 </div>
             </div>
